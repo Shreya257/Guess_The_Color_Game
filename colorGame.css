@@ -1,0 +1,80 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat", "Avenir";
+    background-image: url('color.gif'), url('color.gif'); /* Two images */
+    background-position: bottom left, bottom right; /* Positions */
+    background-size: 60% 60%; /* Sizes for both images */
+    background-repeat: no-repeat; /* Prevent images from repeating */
+}
+
+.square {
+    width: 20%; /* Reduce width to 20% */
+    padding-bottom: 20%; /* Maintain aspect ratio by reducing padding */
+    background: purple;
+    float: left;
+    margin: 1.6%;
+    border-radius: 15%;
+    border: 2px solid white; /* For Squares with white border */
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1.1;
+    color: black;
+    background: rgb(203, 58, 58);
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#DisplayColor {
+    font-size: 200%;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+#stripe {
+    background: yellow;
+    height: 60px;
+    text-align: center;
+}
+
+.selected {
+    color: white;
+    background-color: steelblue;
+}
+
+button {
+    border: 2px solid black; /* Add border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+    background: none;
+    text-transform: uppercase;
+    height: 80%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    outline: 0;
+    padding: 10px 20px; /* Add padding for better button size */
+    margin: 5px; /* Add margin to space out buttons */
+    border-radius: 5px; /* Rounded corners */
+}
+button:hover {
+    color: white;
+    background: steelblue;
+}
